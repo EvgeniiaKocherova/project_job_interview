@@ -11,6 +11,9 @@
         <input v-model="password" type="password" required style="width: 100%; padding: 8px; box-sizing: border-box;" />
       </div>
       <button type="submit" style="width: 100%; padding: 10px; background: #42b883; color: white; border: none; cursor: pointer;">Войти</button>
+      <p style="text-align: center; margin-top: 10px;">
+  <router-link to="/forgot-password">Забыли пароль?</router-link>
+</p>
       <p v-if="error" style="color: red;">{{ error }}</p>
     </form>
   </div>

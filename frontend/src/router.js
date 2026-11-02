@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Login from './view/Login.vue'
 import Profile from './view/Profile.vue'
+import ForgotPassword from './view/ForgotPassword.vue'
+import ResetPassword from './view/ResetPassword.vue'
 
 const routes = [
   { path: '/', redirect: '/login' },
   { path: '/login', component: Login },
-  { path: '/profile', component: Profile, meta: { requiresAuth: true } }
+  { path: '/profile', component: Profile, meta: { requiresAuth: true } },
+  { path: '/forgot-password', component: ForgotPassword },
+  { path: '/reset-password', component: ResetPassword }
 ]
 
 const router = createRouter({
